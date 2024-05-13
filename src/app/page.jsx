@@ -147,7 +147,7 @@ export default function Home() {
 					<div className={"flex flex-col items-center justify-center gap-6 text-center"}>
 						<div className={"flex items-center gap-2 bg-[#6c28d93a] py-1 px-3 rounded-md text-white"}>
 							<div className={"w-[6px] h-[6px] rounded-full bg-white"}></div>
-							<span>FAQ</span>
+							<span></span>
 						</div>
 						<h1 className={"title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium w-full lg:w-[900px]"}>We&apos;ve all the answers</h1>
 					</div>
