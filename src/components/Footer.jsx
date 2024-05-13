@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className={"border-t border-neutral-900 flex justify-center p-10"}>
+        <footer className={"border-t border-neutral-200 flex justify-center p-10"}>
             <div className={"flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between max-w-7xl w-full"}>
                 <div>
                     <span className={"text-xl font-semibold"}>Pecunie</span>

@@ -5,6 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
+
+	const [ email, setEmail ] = useState('');
+	function handleSubmit(e) {
+		e.preventDefault();
+		console.log(email);
+	}
+
 	return (
 		<main className="">
 			<Section id={"product"} showBlur={true} fillScreen={true}>
@@ -12,11 +19,25 @@ export default function Home() {
 					<div className={"flex flex-col items-center justify-center gap-6 text-center"}>
 						<h1 className={"title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium"}>Unlock the Web!</h1>
 						<span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>Agent Driven Data Extraction</span>
-						<button className={"flex items-center gap-3 border rounded-xl py-2 px-4 border-neutral-700 hover:border-neutral-600 transition-colors w-fit"}>
-							<span>Join the Waitlist</span>
-						</button>
+						<form onSubmit={handleSubmit} className={"flex border border-neutral-700 rounded-xl overflow-hidden"}>
+							<input 
+								value={email} 
+								onChange={e => setEmail(e.target.value)} 
+								type="email" 
+								name="" 
+								id="" 
+								placeholder={"What's your work email?"} 
+								className={"h-14 px-4 outline-none font-medium"} 
+							/>
+							<button 
+								className={"flex items-center gap-2 bg-violet-700 hover:bg-violet-800 transition-colors px-5 m-[0.2rem] rounded-xl text-white"}
+							>
+								<i className="fa-regular fa-arrow-right"></i>
+								<span className={"font-medium"}>Get Started</span>
+							</button>
+						</form>
 						<span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>Need something immediately?</span>
-						<button className={"flex items-center gap-3 rounded-xl py-3 px-5 font-semibold text-sm bg-violet-700 hover:bg-violet-800 transition-colors w-fit"}>
+						<button className={"flex items-center gap-3 rounded-xl py-3 px-5 font-semibold text-sm text-white bg-violet-700 hover:bg-violet-800 transition-colors w-fit"}>
 							<span>Book your demo</span>
 							<i className="fa-light fa-arrow-up-right text-xl"></i>
 						</button>
@@ -27,13 +48,13 @@ export default function Home() {
 			<Section id={"features"} showBlur={true}>
 				<div className={"flex flex-col gap-20"}>
 					<div className={"flex flex-col items-center justify-center gap-6 text-center"}>
-						<div className={"flex items-center gap-2 bg-[#6c28d93a] py-1 px-3 rounded-md"}>
-							<div className={"w-[6px] h-[6px] rounded-full bg-neutral-300"}></div>
+						<div className={"flex items-center gap-2 bg-[#6c28d93a] py-1 px-3 rounded-md text-white"}>
+							<div className={"w-[6px] h-[6px] rounded-full bg-white"}></div>
 							<span>Features</span>
 						</div>
 						<h1 className={"title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium w-full lg:w-[900px]"}>Harness the Power of AI for Smarter Data Collection</h1>
 						<span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>Skrapy is here to get you the most relevant data in the form you want!</span>
-						<button className={"flex items-center gap-3 rounded-xl py-3 px-5 font-semibold text-sm bg-violet-700 hover:bg-violet-800 transition-colors w-fit"}>
+						<button className={"flex items-center gap-3 rounded-xl py-3 px-5 font-semibold text-sm text-white bg-violet-700 hover:bg-violet-800 transition-colors w-fit"}>
 							<span>Join Waitlist</span>
 						</button>
 					</div>
@@ -98,7 +119,25 @@ export default function Home() {
 							</button>
 						</div>
 						<div>
-							<Image src={"/leads.png"} width={421} height={278} alt={"Leads image"} />
+							<div className={"flex flex-col gap-10 border border-neutral-200 p-7 rounded-2xl w-[24rem]"}>
+								<div className={"flex flex-col gap-2"}>
+									<span className={"text-xl font-medium"}>New Leads</span>
+									<div className={"h-3 w-36 bg-neutral-200 rounded-full"}></div>
+								</div>
+								<div className={"flex items-end justify-between"}>
+									<div className={"flex flex-col"}>
+										<span className={"text-5xl font-medium"}>472</span>
+										<span className={"text-lg font-medium"}>New calls</span>
+									</div>
+									<div className={"flex flex-col items-end gap-2"}>
+										<div className={"flex items-center gap-2"}>
+											<span className={"text-xl font-medium text-violet-700"}>+156.10%</span>
+											<i className="fa-solid fa-arrow-up-right text-lg"></i>
+										</div>
+										<div className={"h-3 w-[7rem] bg-neutral-200 rounded-full"}></div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -106,8 +145,8 @@ export default function Home() {
 			<Section id={"faq"} showBlur={true}>
 				<div className={"flex flex-col gap-20 max-w-4xl mx-auto relative"} style={{ zIndex: 3 }}>
 					<div className={"flex flex-col items-center justify-center gap-6 text-center"}>
-						<div className={"flex items-center gap-2 bg-[#6c28d93a] py-1 px-3 rounded-md"}>
-							<div className={"w-[6px] h-[6px] rounded-full bg-neutral-300"}></div>
+						<div className={"flex items-center gap-2 bg-[#6c28d93a] py-1 px-3 rounded-md text-white"}>
+							<div className={"w-[6px] h-[6px] rounded-full bg-white"}></div>
 							<span>FAQ</span>
 						</div>
 						<h1 className={"title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium w-full lg:w-[900px]"}>We&apos;ve all the answers</h1>

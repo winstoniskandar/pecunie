@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
        <>
-            <header className={"fixed top-0 left-0 w-screen h-20 border-b border-neutral-900 flex justify-center px-10 bg-bg z-20"}>
+            <header className={"fixed top-0 left-0 w-screen h-20 border-b border-neutral-200 flex justify-center px-10 bg-white z-20"}>
                 <div className={"flex items-center justify-between h-full max-w-7xl w-full"}>
                     <div>
                         <span className={"text-xl font-semibold"}>Pecunie</span>
@@ -23,12 +23,12 @@ export default function Header() {
                         <a href={"#features"} className={"nav-item"}>Features</a>
                         <a href={"#faq"} className={"nav-item"}>FAQ</a>
                     </nav>
-                    <div className={"hidden lg:block"}>
+                    {/* <div className={"hidden lg:block"}>
                         <button className={"flex items-center gap-3 border rounded-xl py-2 px-4 border-neutral-700 hover:scale-105 transition-transform"}>
                             <span>Join the Waitlist</span>
                             <i className="fa-light fa-arrow-up-right text-xl"></i>
                         </button>
-                    </div>
+                    </div> */}
                     <div className={"hidden lg:flex items-center gap-4 text-3xl"}>
                         <button className={"hover:text-violet-700 transition-colors"}>
                             <i className="fa-brands fa-discord"></i>
