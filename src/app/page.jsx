@@ -53,7 +53,7 @@ export default function Home() {
 							<span>Features</span>
 						</div>
 						<h1 className={"title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium w-full lg:w-[900px]"}>Harness the Power of AI for Smarter Data Collection</h1>
-						<span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>Skrapy is here to get you the most relevant data in the form you want!</span>
+						<span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>Pecunie is here to get you the most relevant data in the form you want!</span>
 						<button className={"flex items-center gap-3 rounded-xl py-3 px-5 font-semibold text-sm text-white bg-violet-700 hover:bg-violet-800 transition-colors w-fit"}>
 							<span>Join Waitlist</span>
 						</button>
@@ -154,27 +154,27 @@ export default function Home() {
 					<div className={"flex flex-col gap-2"}>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 						<FAQ
 							title={"What is Pecunie"}
-							description={"Skrapy is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
+							description={"Pecunie is an AI-powered agent specifically designed for web data scraping at scale, helping businesses automate data collection from various online sources."}
 						/>
 					</div>
 					<div className={"flex flex-col sm:flex-row items-center justify-center gap-2"}>
