@@ -15,7 +15,7 @@ export default function Header() {
             <header className={"fixed top-0 left-0 w-screen h-20 border-b border-neutral-200 flex justify-center px-10 bg-white z-20"}>
                 <div className={"flex items-center justify-between h-full max-w-7xl w-full"}>
                     <div>
-                        <span href={"https://pecunie.vercel.app"} className={"text-xl font-semibold"}>Pecunie</span>
+                        <span className={"text-xl font-semibold"}>Pecunie</span>
                     </div>
                     <nav className={"hidden lg:flex items-center gap-8"}>
                         <a href={"#product"} className={"nav-item selected"}>Product</a>
