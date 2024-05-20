@@ -2,17 +2,20 @@
 import Section from "@/components/Section";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, color } from "framer-motion";
 
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState(""); // Add state for submission message
 
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true); // Set isSubmitting to true to disable the button
+    setIsSubmitting(true);
+    setSubmitMessage(""); // Reset submit message
+    // Set isSubmitting to true to disable the button
 
     const form = e.target;
     const formData = new FormData(form);
@@ -31,14 +34,14 @@ export default function Home() {
 		console.log(email)
         setEmail("");
         // Show success message
-        alert("Form submitted successfully!");
+        setSubmitMessage("Form submitted successfully!"); // Update submit message
       } else {
         throw new Error('Network response was not ok');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
       // Handle error if form submission fails
-      alert("An error occurred while submitting the form. Please try again later.");
+      setSubmitMessage("An error occurred while submitting the form. Please try again later."); // Update submit message
     } finally {
       setIsSubmitting(false); // Reset isSubmitting after form submission
     }
@@ -85,6 +88,14 @@ export default function Home() {
           <span className="font-medium">Get Started</span>
         </button>
       </form>
+      
+      {submitMessage && ( // Conditionally render the submission message
+                <span className="mt-2 text-center text-sm text-green-500">
+                  {submitMessage}
+                </span>
+              )}
+      
+      
             <span className={"text-[#9a91a1] font-medium text-base sm:text-lg"}>
               Need something immediately?
             </span>
